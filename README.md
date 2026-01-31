@@ -1,4 +1,4 @@
-# Intergrating Physics Guidance Into Deep Learning for Cine Cardiovascular Segmentation
+# PGE-UNet: Integrating Physics Guidance Into Deep Learning for Cine Cardiovascular Segmentation
 
 ---
 
@@ -33,6 +33,7 @@ Experiments on three public cine CMR benchmarks demonstrate strong accuracy in b
 | **2.5D Input** | 2.5D input for param-efficient |
 | **Noise-Aware Encoder** | Physics-inspired noise estimation |
 | **Physics-Regularized Decoder** | Electromagnetic field constraints via Maxwell equations |
+| **B1 Map Simulator** | Synthesize pseudo transmit-field ($\hat{B}^+_1$) for physics-regularized training without additional mapping sequences |
 | **Multiple Variants Support** | Support for various model configurations |
 
 ---
@@ -120,7 +121,7 @@ python scripts/preprocess_scd.py
 conda activate pge-unet
 cd /path/to/Phys
 
-# Train on ACDC (default: 250 epochs with early stopping)
+# Train on ACDC 
 python scripts/train_acdc.py
 
 # Train on M&M
