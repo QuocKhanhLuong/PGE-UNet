@@ -1,0 +1,10 @@
+============================================================
+SCD TEST SET RESULTS
+============================================================
+
+Model: weights/best_model_scd.pth
+Parameters: 1,597,570
+
+Foreground (Left Ventricle) 3D Metrics:
+  Dice: 0.9291
+  HD95: 1.2478
